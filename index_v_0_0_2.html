@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface_v_0_0_2.css"/>
+		<title>Game</title>
+	</head>
+
+	<body>
+		<div id="loader">
+			<h3>Loading...</h3>
+			<br></br>
+			<br></br>
+		</div>
+		<div id="game" style="display:none;">		
+			<div id="main_tab">
+				<h1>Overall</h1>
+				You have <span id="currency" style="font-weight: bold;"></span> units of currency.
+				<br />
+				<br />
+				You are earning <span id="cps_total" style="font-weight: bold;"></span> currency per second.
+				<br />
+				<br />
+				You get <span id="currency_per_click" style="font-weight: bold;"></span> currency per click.
+				<br />
+				<br />
+				<br />
+				<br />
+				<button id="clicker_button" onClick="clicker()">Click!</button>
+				<br />
+				<br />
+				<br />
+				<br />
+				<div id="clicker_upgrades">
+					<h2>Clicker Upgrades:</h2>
+					<button class="upgrade_button_a" onClick="clicker_upgrade('a')" id="clicker_a" style="display:none;">A<br />(<span id="clicker_upgrade_price_a")></span>)</button>
+					<button class="upgrade_button_b" onClick="clicker_upgrade('b')" id="clicker_b" style="display:none;">B<br />(<span id="clicker_upgrade_price_b")></span>)</button>
+					<button class="upgrade_button_c" onClick="clicker_upgrade('c')" id="clicker_c" style="display:none;">C<br />(<span id="clicker_upgrade_price_c")></span>)</button>
+					<button class="upgrade_button_d" onClick="clicker_upgrade('d')" id="clicker_d" style="display:none;">D<br />(<span id="clicker_upgrade_price_d")></span>)</button>
+					<button class="upgrade_button_e" onClick="clicker_upgrade('e')" id="clicker_e" style="display:none;">E<br />(<span id="clicker_upgrade_price_e")></span>)</button>
+				</div>
+			</div>
+			<div id="alpha_tab" style="display:none;">
+				<h1>Alphas</h1>
+				You have <span id="alpha_num" style="font-weight: bold;"></span> Alphas.
+				<br />
+				<br />
+				Your alphas earn <span id="cps_alpha" style="font-weight: bold;"></span> currency per second.
+				<br />
+				<br />
+				<br />
+				<button class="buy_building_button" onClick="add_alpha(1)">Buy 1 Alpha<br />(<span id="price_alpha_1"></span>)</button>
+				<br />
+				<button class="buy_building_button" onClick="add_alpha(10)">Buy 10 Alphas<br />(<span id="price_alpha_10"></span>)</button>
+				<br />
+				<button class="buy_building_button" onClick="add_alpha(100)">Buy 100 Alphas<br />(<span id="price_alpha_100"></span>)</button>
+				<br />
+				<br />
+				<div id="alpha_upgrades">
+					<h2>Alpha Upgrades:</h2>
+					<button class="upgrade_button_a" onClick="alpha_upgrade('a')" id="alpha_a" style="display:none;">A<br />(<span id="alpha_upgrade_price_a")></span>)</button>
+					<button class="upgrade_button_b" onClick="alpha_upgrade('b')" id="alpha_b" style="display:none;">B<br />(<span id="alpha_upgrade_price_b")></span>)</button>
+					<button class="upgrade_button_c" onClick="alpha_upgrade('c')" id="alpha_c" style="display:none;">C<br />(<span id="alpha_upgrade_price_c")></span>)</button>
+					<button class="upgrade_button_d" onClick="alpha_upgrade('d')" id="alpha_d" style="display:none;">D<br />(<span id="alpha_upgrade_price_d")></span>)</button>
+					<button class="upgrade_button_e" onClick="alpha_upgrade('e')" id="alpha_e" style="display:none;">E<br />(<span id="alpha_upgrade_price_e")></span>)</button>
+				</div>
+			</div>
+			<!--<div id="upgrade_tab">
+				THIS IS THE UPGRADE TAB
+			</div>-->
+			
+			<br></br>
+			<br></br>
+
+			<button id="save_button" onClick="save()">Save</button>
+			<div id="debug_menu" style="display:none">
+				<br></br>
+				<br></br>
+				Debug Menu
+				<br></br>
+				<button type="button" onClick="delete_save()">Delete Save</button>
+				<br></br>
+				<button type="button" onClick="add_currency(.1)">Add 0.1 Currency</button>
+				<button type="button" onClick="add_currency(10)">Add 10 Currency</button>
+				<button type="button" onClick="add_currency(100)">Add 100 Currency</button>
+				<button type="button" onClick="add_currency(1000)">Add 1,000 Currency</button>
+				<button type="button" onClick="add_currency(10000)">Add 10,000 Currency</button>
+				<button type="button" onClick="add_currency(100000)">Add 100,000 Currency</button>
+				<button type="button" onClick="add_currency(1000000)">Add 1,000,000 Currency</button>
+				<button type="button" onClick="add_currency(100000000)">Add 100,000,000 Currency</button>
+				<br></br>
+				<button type="button" onClick="add_clicks(100)">Add 100 Total Clicks</button>
+				<br></br>
+				<button type="button" onClick="add_alpha_debug(1)">Add 1 Alpha</button>
+				<button type="button" onClick="add_alpha_debug(10)">Add 10 Alphas</button>
+				<button type="button" onClick="add_alpha_debug(100)">Add 100 Alphas</button>
+				<button type="button" onClick="add_alpha_debug(1000)">Add 1,000 Alphas</button>
+				<button type="button" onClick="add_alpha_debug(1000000)">Add 1,000,000 Alphas</button>
+				<button type="button" onClick="add_alpha_debug(100000000)">Add 100,000,000 Alphas</button>
+			</div>
+			
+			<script type="text/javascript" src="variables_v_0_0_2.js"></script>
+			<script type="text/javascript" src="functions_v_0_0_2.js"></script>
+			<script type="text/javascript" src="main_v_0_0_2.js"></script>
+	</body>
+</html> 
