@@ -117,7 +117,7 @@ update_cps('alpha');
 update_price('alpha');
 
 // Switch from Loadin Screen
-switch_display(1); // Set variable to 1 for debug mode
+switch_display(0); // Set variable to 1 for debug mode
 
 // Update Currency every Second
 window.setInterval(function(){
